@@ -1,0 +1,18 @@
+#example: 	debug_printer(delta, "Enemies to spawn", enemies_to_spawn)
+func debug_printer(delta, debug1_name : String, debug1, debug2_name = null, debug2 = null, debug3_name = null, debug3 = null):
+	#place function in process
+	#debug_name is always a string
+	timer += delta
+	if timer >= 1: 
+		if debug1 != null: 
+			
+			print(debug1_name,": ", debug1) 
+		if debug2 != null: 
+			
+			print(debug2_name,": ", debug2) 
+		if debug3 != null: 
+			
+			print(debug3_name,": ", debug3) 
+	
+		timer = 0 
+
